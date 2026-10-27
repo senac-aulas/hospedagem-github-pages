@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZapStickers — O App de Figurinhas Definitivo para WhatsApp</title>
+  <meta name="description" content="Mais de 50.000 figurinhas animadas, memes brasileiros, figurinhas com áudio e criador com IA para o seu WhatsApp. Inspirado no design moderno e de alta performance.">
+  <meta name="keywords" content="figurinhas de whatsapp, stickers zap, memes brasileiros, figurinhas animadas, figurinha capivara, whatsapp stickers pack">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="ZapStickers — As Figurinhas Mais Virais do WhatsApp">
+  <meta property="og:description" content="Ganhe qualquer discussão no grupo do Zap com os melhores packs animados, memes brasileiros e stickers com áudio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/mascot-capy.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/mascot-capy.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow-top"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo" id="navBrand">
+        <div class="brand-icon">
+          <img src="assets/mascot-capy.png" alt="ZapStickers Logo">
+        </div>
+        <span>ZapStickers</span>
+        <span class="brand-badge">2026</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#showcase" class="nav-link">Criador IA</a>
+        <a href="#features" class="nav-link">Recursos</a>
+        <a href="#catalog" class="nav-link">Packs Virais</a>
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="nav-link">Comunidade</a>
+      </nav>
+
+      <a href="#catalog" class="nav-cta-btn js-hero-cta" id="navCta">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
+        </svg>
+        Adicionar ao Zap
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Faithful to Uncle Rudy's Iconic Aesthetic)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <!-- Built for WhatsApp Badge -->
+        <div class="hero-pill-badge">
+          <span class="pulse-dot"></span>
+          BUILT FOR WHATSAPP 2026 &bull; NATIVO iOS E ANDROID
+        </div>
+
+        <!-- Giant Bold Headline -->
+        <h1 class="hero-title">
+          <span class="gradient-text">As figurinhas que fazem você</span><br>
+          <span class="accent-text">vencer qualquer papo</span> no Zap
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-description">
+          Mais de 50.000 figurinhas animadas, reações ácidas e memes brasileiros em 60 FPS. Um toque e o pack inteiro já está na sua gaveta de adesivos.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group">
+          <button class="cta-button-primary js-hero-cta" id="heroPrimaryCta">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
+            </svg>
+            Adicionar Pacotes no WhatsApp
+          </button>
+
+          <a href="#showcase" class="cta-button-secondary" id="heroSecondaryCta">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Criar Figurinha com IA
+          </a>
+        </div>
+
+        <!-- Hero Stage: Phone Mockup + Floating Sticker Cluster -->
+        <div class="hero-stage" id="heroStage">
+          
+          <!-- Floating Sticker 1: WhatsApp Notification Toast -->
+          <div class="floating-element float-toast-1">
+            <div class="toast-icon-wrap">🔥</div>
+            <div>
+              <div class="toast-text-title">
+                ZapStickers <span>&bull; Agora</span>
+              </div>
+              <div class="toast-text-body">
+                Novo pack: <strong>"Deboche & CLT 3.0"</strong> acabou de chegar no catálogo!
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Sticker 2: Fire Flame Sticker (Uncle Rudy Style) -->
+          <div class="floating-element float-flame-sticker" title="Clique para um pop!">
+            <img src="assets/flame-fire.png" alt="Figurinha de Fogo com Óculos">
+            <div class="float-speech-bubble">Fogo no Zap! 🔥</div>
+          </div>
+
+          <!-- Floating Sticker 3: Caramelo Dog Meme Sticker -->
+          <div class="floating-element float-dog-sticker" title="Vira-lata Caramelo Marrento">
+            <img src="assets/dog-caramelo.png" alt="Figurinha Cachorro Caramelo Meme">
+            <div class="float-speech-bubble">É segredo fi 🤫</div>
+          </div>
+
+          <!-- Floating Sticker 4: Crying Cat Meme Sticker -->
+          <div class="floating-element float-cat-sticker" title="Gato chorando joinha">
+            <img src="assets/cat-crying.png" alt="Figurinha Gato Chorando Joinha">
+            <div class="float-speech-bubble">Tô bem 👍😭</div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-element float-pill-badge-left">
+            ⚡ 60 FPS ANIMADAS
+          </div>
+          <div class="floating-element float-pill-badge-right">
+            +50K FIGURINHAS
+          </div>
+
+          <!-- Centerpiece: Realistic Smartphone Screen (WhatsApp UI) -->
+          <div class="phone-mockup">
+            <!-- Dynamic Island -->
+            <div class="dynamic-island">
+              <div class="island-camera"></div>
+              <div class="island-sensor"></div>
+            </div>
+
+            <!-- Phone Screen -->
+            <div class="phone-screen">
+              <div class="chat-bg-pattern"></div>
+
+              <!-- Chat Header -->
+              <div class="chat-header">
+                <div class="chat-avatar">🍻</div>
+                <div class="chat-header-info">
+                  <div class="chat-header-title">Os Inimigos do Fim 🍻</div>
+                  <div class="chat-header-sub">Você, Lucas, Fernanda, Rodrigo...</div>
+                </div>
+              </div>
+
+              <!-- Chat Messages Flow -->
+              <div class="chat-messages">
+                <!-- Received Message -->
+                <div class="msg-bubble msg-received">
+                  <div class="msg-sender-name">Rodrigo CLT</div>
+                  <div>Alguém já terminou aquele relatório de segunda ou tamo tudo lascado? 🥲</div>
+                  <div class="msg-meta">10:42</div>
+                </div>
+
+                <!-- Sticker Sent Message: Capybara with Sunglasses & Coffee -->
+                <div class="msg-bubble msg-sent msg-sticker" title="Figurinha da Capivara Sincera">
+                  <img src="assets/mascot-capy.png" alt="Capivara tomando café">
+                  <div class="msg-meta">
+                    10:43 <span class="double-check">✓✓</span>
+                  </div>
+                </div>
+
+                <!-- Received Reaction -->
+                <div class="msg-bubble msg-received">
+                  <div class="msg-sender-name">Fernanda</div>
+                  <div>KKKKKKKKKKKKKKKKKKKKK ONDE VOCÊ ACHOU ESSA FIGURINHA ME MANDA AGORA! 😭</div>
+                  <div class="msg-meta">10:43</div>
+                </div>
+
+                <!-- Audio Sticker Message with Play Button -->
+                <div class="msg-bubble msg-sent">
+                  <div>Toma o áudio de resposta:</div>
+                  <div class="audio-sticker-card">
+                    <button class="audio-play-btn" id="chatAudioPlayBtn" title="Ouvir áudio meme">
+                      ▶
+                    </button>
+                    <div class="audio-waveform">
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                      <div class="wave-bar"></div>
+                    </div>
+                    <span style="font-size:0.7rem; color:#8696a0;">0:03</span>
+                  </div>
+                  <div class="msg-meta">
+                    10:44 <span class="double-check">✓✓</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chat Input Bar -->
+              <div class="chat-input-bar">
+                <div class="chat-input-box">Mensagem...</div>
+                <div style="font-size: 1.1rem; opacity: 0.7;">📎 📷 🎤</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: Interactive Dual Showcase ("Talk to it. Point at it. Done." Style)
+         ========================================================================== -->
+    <section class="section-wrap" id="showcase">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TECNOLOGIA & HUMOR</span>
+          <h2 class="section-title">Escolha. Toque. Envie no grupo. Sucesso.</h2>
+          <p class="section-subtitle">
+            Desenvolvido para você nunca mais perder o timing da piada ou da fofoca.
+          </p>
+        </div>
+
+        <div class="split-cards-grid">
+          <!-- Card 1: Live AI Sticker Creator Playground -->
+          <div class="showcase-card">
+            <div class="showcase-card-header">
+              <h3 class="showcase-card-title">
+                <span>🪄</span> Gerador Instantâneo com IA
+              </h3>
+              <p class="showcase-card-desc">
+                Digite qualquer bordão, escolha a energia do momento e veja sua figurinha com recorte die-cut criada na hora.
+              </p>
+            </div>
+
+            <!-- Interactive Maker Box -->
+            <div class="sticker-maker-box">
+              <div class="maker-preview-canvas">
+                <div class="maker-speech-bubble" id="makerSpeechBubble">
+                  Falou pouco mas falou bosta 💅
+                </div>
+                <img src="assets/dog-caramelo.png" alt="Sticker preview" class="maker-sticker-char" id="makerStickerChar">
+              </div>
+
+              <div class="maker-mood-chips">
+                <button class="mood-chip active" data-mood="deboche">💅 Deboche</button>
+                <button class="mood-chip" data-mood="clt">☕ CLT Cansado</button>
+                <button class="mood-chip" data-mood="gatos">🐱 Crise Existencial</button>
+                <button class="mood-chip" data-mood="capy">😎 Capivara Zen</button>
+                <button class="mood-chip" data-mood="fogo">🔥 Fogo no Parquinho</button>
+              </div>
+
+              <div class="maker-input-row">
+                <input type="text" class="maker-input" id="makerInput" placeholder="Edite a frase da figurinha..." value="Falou pouco mas falou bosta 💅">
+                <button class="cta-button-primary" style="padding: 10px 18px; font-size: 0.85rem;" id="makerActionBtn">
+                  Copiar ✨
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Interactive Soundboard Playground -->
+          <div class="showcase-card">
+            <div class="showcase-card-header">
+              <h3 class="showcase-card-title">
+                <span>🔊</span> Stickers com Áudio Integrado
+              </h3>
+              <p class="showcase-card-desc">
+                Figurinhas que vêm acompanhadas dos áudios virais mais icônicos do Brasil. Clique nos botões para ouvir!
+              </p>
+            </div>
+
+            <!-- Interactive Soundboard List -->
+            <div class="soundboard-box">
+              <div class="sound-item" data-sound="boing" title="Clique para reproduzir">
+                <div class="sound-info">
+                  <img src="assets/mascot-capy.png" alt="" class="sound-sticker-thumb">
+                  <div>
+                    <div class="sound-title">"Ih rapaz, lá vem o chefe"</div>
+                    <div class="sound-sub">Áudio de Alerta CLT &bull; 0:02</div>
+                  </div>
+                </div>
+                <button class="sound-action-btn">▶</button>
+              </div>
+
+              <div class="sound-item" data-sound="horn" title="Clique para reproduzir">
+                <div class="sound-info">
+                  <img src="assets/flame-fire.png" alt="" class="sound-sticker-thumb">
+                  <div>
+                    <div class="sound-title">"Fogo no Parquinho Hype"</div>
+                    <div class="sound-sub">Meme de Treta &bull; 0:03</div>
+                  </div>
+                </div>
+                <button class="sound-action-btn">▶</button>
+              </div>
+
+              <div class="sound-item" data-sound="pop" title="Clique para reproduzir">
+                <div class="sound-info">
+                  <img src="assets/cat-crying.png" alt="" class="sound-sticker-thumb">
+                  <div>
+                    <div class="sound-title">"Rindo de nervoso (Choro e joinha)"</div>
+                    <div class="sound-sub">Crise Existencial &bull; 0:02</div>
+                  </div>
+                </div>
+                <button class="sound-action-btn">▶</button>
+              </div>
+
+              <div class="sound-item" data-sound="ding" title="Clique para reproduzir">
+                <div class="sound-info">
+                  <img src="assets/dog-caramelo.png" alt="" class="sound-sticker-thumb">
+                  <div>
+                    <div class="sound-title">"Caiu o PIX do mês!"</div>
+                    <div class="sound-sub">Sino de Vitória &bull; 0:01</div>
+                  </div>
+                </div>
+                <button class="sound-action-btn">▶</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: Bento Grid (Uncle Rudy iOS 27 Architecture Inspiration)
+         ========================================================================== -->
+    <section class="section-wrap" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ALTA PERFORMANCE</span>
+          <h2 class="section-title">
+            Construímos a experiência definitiva<br>
+            ao redor da cultura do meme
+          </h2>
+          <p class="section-subtitle">
+            Zero propagandas chatas. Sem 5 etapas de download. Desenvolvido para máxima velocidade no seu dia a dia.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento 1: 1-Click Sync (Spans 2 columns) -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon-badge">⚡</div>
+            <h3 class="bento-title">Sincronização Nativa Instantânea</h3>
+            <p class="bento-desc">
+              Compatível com o protocolo oficial WASticker. Um único toque adiciona o pacote com 30 figurinhas diretamente na sua gaveta de adesivos do WhatsApp no iPhone e Android.
+            </p>
+            <div class="bento-visual">
+              <div class="speed-metric">
+                0.2s <span>tempo médio de instalação do pack</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: 60 FPS Animated Stickers -->
+          <div class="bento-card">
+            <div class="bento-icon-badge">🎬</div>
+            <h3 class="bento-title">Animações a 60 FPS</h3>
+            <p class="bento-desc">
+              Formatadas em WebP ultraleve. Animações fluidas sem travar o teclado ou estourar a memória do seu celular.
+            </p>
+            <div class="bento-visual">
+              <div class="mini-sticker-pill">
+                <img src="assets/mascot-capy.png" alt="">
+              </div>
+              <div class="mini-sticker-pill" style="margin-left: 10px;">
+                <img src="assets/flame-fire.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: AI Background Cutout -->
+          <div class="bento-card">
+            <div class="bento-icon-badge">✂️</div>
+            <h3 class="bento-title">Recorte de Fundo Inteligente</h3>
+            <p class="bento-desc">
+              Tire uma foto de um amigo e a IA isola a pessoa com a clássica borda branca die-cut de figurinha profissional.
+            </p>
+            <div class="bento-visual">
+              <div class="mini-sticker-pill">
+                <img src="assets/dog-caramelo.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Daily Trend Drop (Spans 2 columns) -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon-badge">📡</div>
+            <h3 class="bento-title">Radar de Tendências do Brasil</h3>
+            <p class="bento-desc">
+              Estourou um meme no Twitter/X, TikTok ou reality show? Nossos designers sobem o pack correspondente em menos de 15 minutos para você ser o primeiro a mandar no grupo.
+            </p>
+            <div class="bento-visual">
+              <div class="sticker-pack-strip">
+                <div class="mini-sticker-pill"><img src="assets/mascot-capy.png" alt=""></div>
+                <div class="mini-sticker-pill"><img src="assets/flork-coffee.png" alt=""></div>
+                <div class="mini-sticker-pill"><img src="assets/flame-fire.png" alt=""></div>
+                <div class="mini-sticker-pill"><img src="assets/cat-crying.png" alt=""></div>
+                <div class="mini-sticker-pill"><img src="assets/dog-caramelo.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: Interactive Sticker Packs Catalog
+         ========================================================================== -->
+    <section class="section-wrap" id="catalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COLEÇÃO COMPLETA</span>
+          <h2 class="section-title">Pacotes Prontos para Adicionar</h2>
+          <p class="section-subtitle">
+            Explore os pacotes mais baixados da semana e adicione direto ao seu WhatsApp com 1 clique.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="catalog-filters">
+          <button class="filter-btn active" data-filter="all">🔥 Todos os Packs</button>
+          <button class="filter-btn" data-filter="deboche">💅 Deboche & CLT</button>
+          <button class="filter-btn" data-filter="pets">🐾 Bichinhos Memes</button>
+          <button class="filter-btn" data-filter="bomdia">☕ Bom Dia & Família</button>
+          <button class="filter-btn" data-filter="reacoes">💥 Reações Rápidas</button>
+        </div>
+
+        <!-- Packs Grid -->
+        <div class="packs-grid" id="packsGrid">
+          
+          <!-- Pack 1: Capivara Zen -->
+          <div class="pack-card" data-category="pets">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">24 Figurinhas</span>
+              <img src="assets/mascot-capy.png" alt="Pack Capivara Zen" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">Capivara Zen & Caótica</h4>
+              <p class="pack-desc">Para quem atingiu o estado de paz absoluta onde nada mais abala no expediente.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+          <!-- Pack 2: Vira-lata Caramelo -->
+          <div class="pack-card" data-category="deboche">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">30 Figurinhas</span>
+              <img src="assets/dog-caramelo.png" alt="Pack Vira-Lata Caramelo" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">Caramelo Marrento & Ostentação</h4>
+              <p class="pack-desc">O melhor do deboche nacional com corrente de ouro e respostas atravessadas.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+          <!-- Pack 3: Gato em Crise -->
+          <div class="pack-card" data-category="pets">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">18 Figurinhas</span>
+              <img src="assets/cat-crying.png" alt="Pack Gato Chorando" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">Gatinhos em Crise Existencial</h4>
+              <p class="pack-desc">Aquele joinha chorando que resume perfeitamente sua vida financeira e amorosa.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+          <!-- Pack 4: Fogo no Parquinho -->
+          <div class="pack-card" data-category="reacoes">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">20 Figurinhas</span>
+              <img src="assets/flame-fire.png" alt="Pack Fogo no Parquinho" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">Fogo no Parquinho & Tretas</h4>
+              <p class="pack-desc">Para soltar no grupo dos amigos logo após uma revelação bombástica.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+          <!-- Pack 5: CLT Revolta & Café -->
+          <div class="pack-card" data-category="deboche">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">28 Figurinhas</span>
+              <img src="assets/flork-coffee.png" alt="Pack CLT Revoltado" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">CLT Cansado & Café da Firma</h4>
+              <p class="pack-desc">O cansaço das 8h às 18h transformado na arte mais pura do desespero cômico.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+          <!-- Pack 6: Bom Dia Abençoado de Família -->
+          <div class="pack-card" data-category="bomdia">
+            <div class="pack-preview-area">
+              <span class="pack-sticker-count">32 Figurinhas</span>
+              <img src="assets/mascot-capy.png" alt="Pack Bom Dia" class="pack-main-sticker">
+            </div>
+            <div class="pack-info">
+              <h4 class="pack-title">Bom Dia de Tia & Família VIP</h4>
+              <p class="pack-desc">Flores com glitter, café fumegante e versículos para manter o grupo da família vivo.</p>
+            </div>
+            <button class="pack-add-btn">
+              <span>+</span> Adicionar ao Zap
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer Showstopper (Uncle Rudy Giant Outline Text + Mascot Callout)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-hero-callout">
+      
+      <!-- Giant Background Outline Wordmark (Uncle Rudy Signature) -->
+      <div class="footer-giant-wordmark">
+        ZAPSTICKERS
+      </div>
+
+      <!-- Center Mascot Sticker with Speech Bubble -->
+      <div class="footer-mascot-wrap">
+        <div class="footer-speech-bubble">
+          Ainda mandando emoji comum em 2026? Se atualize, consagrado! 😎
+        </div>
+        <img src="assets/mascot-capy.png" alt="ZapStickers Mascot" class="footer-mascot-sticker" id="footerMascot">
+      </div>
+
+      <!-- Bottom Call to Action -->
+      <div class="footer-cta-container">
+        <button class="cta-button-primary js-hero-cta" style="font-size: 1.15rem; padding: 16px 36px;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
+          </svg>
+          Instalar ZapStickers Grátis
+        </button>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copy">
+          &copy; 2026 ZapStickers Studio. Feito com 💚 para os mestres da fofoca e do deboche.
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Discord">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028z"/>
+            </svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="X / Twitter">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Modals & Toast Notices
+       ========================================================================== -->
+  <div class="modal-overlay" id="packModal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <img src="assets/mascot-capy.png" alt="Preview do Pack" class="modal-pack-preview" id="modalPackImage">
+      <h3 class="modal-title" id="modalTitle">Nome do Pacote</h3>
+      <p class="modal-desc" id="modalDesc">Descrição do pacote</p>
+
+      <div class="modal-progress-bar">
+        <div class="modal-progress-fill" id="modalProgress"></div>
+      </div>
+
+      <button class="cta-button-primary" style="width: 100%;" id="modalConfirmBtn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
+        </svg>
+        Adicionar ao WhatsApp Agora
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Notice -->
+  <div class="toast-notice" id="toastNotice">
+    <div class="toast-badge-icon" id="toastNoticeBadge">✓</div>
+    <div id="toastNoticeText">Figurinha adicionada com sucesso!</div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
